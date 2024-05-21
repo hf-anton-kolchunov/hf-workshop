@@ -1,0 +1,40 @@
+{
+  "configurations" : [
+    {
+      "id" : "43C1ED6C-E0F1-49B6-ACCE-8C9D91C26FC5",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "maximumTestRepetitions" : 100,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Workshop.xcodeproj",
+      "identifier" : "4A1A68A42BFBEB3D0070D399",
+      "name" : "Workshop"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Workshop.xcodeproj",
+        "identifier" : "4A1A68B42BFBEB3F0070D399",
+        "name" : "WorkshopTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Workshop.xcodeproj",
+        "identifier" : "4A1A68BE2BFBEB3F0070D399",
+        "name" : "WorkshopUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
