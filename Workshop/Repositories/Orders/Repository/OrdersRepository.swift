@@ -34,6 +34,7 @@ actor OrdersRepository: ObservableObject {
     }
 
     func alternativePlaceOrder(_ sales: [Donut.ID: UInt]) async -> Order {
+        // !!! Order of the execution should be preserved !!!
         let number = currentInvoiceNumber
         let order = placeOrder(sales, number: number)
         await networkService.performNetworkRequest()
